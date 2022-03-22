@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: websphere-liberty-ingress
+  namespace: ns1
+spec:
+  rules:
+    - host: websphere-liberty-app-tutorialmalaga.taller-malaga-ef54096a3dc366ee1fc4546fadbdd010-0000.eu-de.containers.appdomain.cloud
+      http:
+        paths:
+          - path: /
+            pathType: Exact
+            backend:
+              service:
+                name: websphere-liberty-service1
+                port: 
+                  number: 9080
