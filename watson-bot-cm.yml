@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: watson-bot-cm
+  namespace: watson-bot
+data:
+  CONVERSATION_IAM_APIKEY: HUwruB24l0dB4YKQlecQq1TQ-ANtTYHONsZE2jVOuIDr
+  CONVERSATION_URL: https://api.eu-de.assistant.watson.cloud.ibm.com/instances/176ed6b6-66dc-4225-b0b7-85515ac47134
+  WORKSPACE_ID: 260d7faa-62bc-4ebb-a567-f5f5647198e9
