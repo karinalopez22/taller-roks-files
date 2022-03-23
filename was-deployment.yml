@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: websphere-liberty-app
-  namespace: ns1
+  namespace: ns30
 spec:
   selector:
     matchLabels:
